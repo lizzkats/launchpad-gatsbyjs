@@ -1,0 +1,18 @@
+@import './_variables.scss';
+
+.main {
+  font-size: 12px;
+  @include minWidth($md){
+    font-size: 14px;
+  }
+  @include minWidth($lg){
+    font-size: 16px;
+  }
+  * {
+    overflow: auto;
+  }
+}
+
+p {
+  font-size: 1rem;
+}

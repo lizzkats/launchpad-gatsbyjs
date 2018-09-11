@@ -1,0 +1,29 @@
+@import './_variables.scss';
+
+.card-container {
+  background-color: $magenta;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: $meltBlue;
+  margin: 1rem;
+
+  @include minWidth($lg){
+    flex: 1 0 25%;
+  }
+}
+
+.card-heading {
+  text-align: center;
+}
+
+.card__button {
+  display: block;
+  margin: auto;
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 15px;
+}

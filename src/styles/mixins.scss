@@ -1,0 +1,14 @@
+@import './_variables.scss';
+
+@mixin minWidth($size){
+  @media screen and (min-width : $size) {
+    @content;
+  }
+}
+
+@mixin inlineList {
+  list-style-type: none;
+    li {
+      display: inline-block;
+    }
+}
